@@ -1,0 +1,184 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" rel="stylesheet">
+
+    <title>Personal Portfolio</title>
+</head>
+<body>
+    <div id="header">
+         <div class="container">
+            <nav>
+                <ul id="sidemenu">
+                    <li><a href="#header">Home</a></li>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                    <li><a href="#about">About</a></li>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                    <li><a href="#member">Member</a></li>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                    <li><a href="#projects">Projects</a></li>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                    <li><a href="#contact">Contact</a></li>
+                    <i class="fas fa-times" onclick="closemenu()"></i>
+                </ul>
+
+                <i class="fas fa-bars" onclick="openmenu()"></i>
+            </nav>
+            <div class="header-text">
+                <p>STUDENT</p>
+                <h4>Hi, I'm <span>Dhrithi Bhat</span>  <br> From India </h4><p> <i>"Exploring the intersection of creativity and technology <br>to build solutions."</i></p>
+            </div>
+         </div>
+    </div>
+    <!-- ABOUT -->
+    <div id="about">
+        <div class="container">
+            <div class="row">
+                <div class="about-col-1">
+                    <img class="photo" src="images/about.png">
+                </div>
+                <div class="about-col-2">
+                    <h1 class="sub-title">About Me</h1><br><br>
+                    <p>Hi! I'm Dhrithi Bhat, a BE student in Computer Science Engineering. I am interested in web development, but I'm also passionate about other areas in technology. My goal is to innovate and build efficient solutions. </p>
+                    <div class="tab-titles">
+                        <p class="tab-links active-link" onclick="opentab('skills')">Skills</p>
+                        <p class="tab-links" onclick="opentab('education')">Education</p>
+                    </div>
+                    <div class="tab-contents active-tab" id="skills">
+                        <ul>
+                            <li><span>Web Development</span><br>HTML, CSS, JavaScript, React.js</li>
+                            <li><span>C++</span><br>Programming language</li>
+                            <li><span>Java Basics</span><br>Programming language</li>
+                            <li><span>Fundamentals of C</span><br>Programming language</li>
+                        </ul>
+                    </div>
+                    <div class="tab-contents" id="education">
+                        <ul>
+                            <li><span>2021-2025</span><br>Pursuing Bachelor’s Degree in Computer Science & Engineering at Vivekananda College of Engineering & Technology, Puttur</li>
+                            <li><span>2019-2021</span><br>Pre-University at Vivekananda Pre-university College, Puttur</li>
+                            <li><span>2019</span><br>SSLC at Vivekananda English Medium School, Puttur</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- Member -->
+    <div id="member">
+        <div class="container"><br><br><br>
+            <h1 class="sub-title">Member</h1>
+            <div class="member-list">
+                <div>
+                    <h2>IEEE Member</h2>
+                    <p>An active member of the Institute of Electrical and Electronics Engineers (IEEE).</p>
+                </div>
+                <div>
+                    <h2>Bharath Scouts And Guides</h2>
+                    <p>I was an active member and guide in the Bharat Scouts and Guides (BSG). I have gained valuable experience in leadership, teamwork, community service, and personal development.</p>
+                </div>
+                <div>
+                    <h2>NSS (National Service Scheme)</h2>
+                    <p>Currently a member of the National Service Scheme (NSS), actively participating in community welfare and social initiatives. Committed to creating a positive impact through various programs and activities.</p>
+                </div>
+            </div>
+        </div>
+    </div><br><br><br><br>
+    <!-- Portfolio -->
+    <div id="projects">
+        <div class="container">
+            <h1 class="sub-title">My projects</h1>
+            <div class="work-list">
+                <div class="work">
+                    <img src="images/work-1.jpg" alt="">
+                    <div class="layer">
+                        <h3>Library management system</h3>
+                    </div>
+                </div>
+                <div class="work">
+                    <img src="images/work-2.jpg" alt="">
+                    <div class="layer">
+                        <h3>Health detection using human tongue</h3>
+                    </div>
+                </div>
+                <div class="work">
+                    <img src="images/work-33.png" alt="">
+                    <div class="layer">
+                        <h3>An intention analyzer based on text conversation</h3>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div><br><br><br><br><br><br>
+    <!-- Contact form -->
+    <div id="contact">
+        <div class="container">
+            <div class="row">
+                <div class="contact-left">
+                    <h1 class="sub-title">Contact Me</h1>
+                    <p><i class="fa-solid fa-paper-plane"></i>dhrithibhat2003@gmail.com</p>
+                    <p><i class="fas fa-phone-square-alt"></i>+918971112492</p>
+                    <div class="social-icons">
+                        <a href="https://www.linkedin.com/in/Dhrithi-Bhat/"><i class="fa-brands fa-linkedin"></i></a>
+                        <a href="https://github.com/dbhat431"><i class="fa-brands fa-github"></i></a>
+                    </div>
+                    <a href="images/Dhrithi Bhat _ Resume.pdf" download="Dhrithi" class="btn btn2">Download Resume</a>
+                </div>
+                <div class="contact-right">
+                    <form name="submit-to-google-sheet">
+                        <input type="text" name="Name" placeholder="Your name" required>
+                        <input type="email" name="Email" placeholder="Your email" required>
+                        <textarea name="Message" rows="6" placeholder="Your Message"></textarea>
+                        <button type="submit" class="btn btn2">Submit</button>
+                    </form>
+                    <span id="msg"></span>
+                </div>
+            </div>
+        </div>
+        <div class="copyright">
+            <p>Designed by &copy; Dhrithi Bhat <i class="fas fa-heart"></i></p>
+        </div>
+    </div>
+
+    <script>
+        var tablinks = document.getElementsByClassName("tab-links");
+        var tabcontents = document.getElementsByClassName("tab-contents");
+        function opentab(tabname){
+            for (var tablink of tablinks){
+                tablink.classList.remove("active-link");        
+            }
+            for (var tabcontent of tabcontents){
+                tabcontent.classList.remove("active-tab");        
+            }
+            event.currentTarget.classList.add("active-link");
+            document.getElementById(tabname).classList.add("active-tab");
+        }
+    </script>
+
+    <script>
+        var sidemenu=document.getElementById("sidemenu");
+        function openmenu(){
+           sidemenu.style.right="0";
+        }
+        function closemenu(){
+           sidemenu.style.right="-200px";
+        }
+    </script>
+    <script>
+        const scriptURL = 'https://script.google.com/macros/s/AKfycbyReE_yRlpwCSW5j7xCaXhBSAxp2G9umFAzicAZ8-r-fL7Gt99Y_S6fxDv-zQmdSGGcuA/exec'
+        const form = document.forms['submit-to-google-sheet']
+        const msg=document.getElementById("msg")
+
+        form.addEventListener('submit', e => {
+          e.preventDefault()
+          fetch(scriptURL, { method: 'POST', body: new FormData(form)})
+            .then(response => {
+                msg.innerHTML="Message sent successfully"
+                setTimeout(function(){
+                    msg.innerHTML=""
+                },5000)
+                form.reset()
+            })
+            .catch(error => console.error('Error!', error.message))
+        })
+    </script>
+</body>
+</html>
